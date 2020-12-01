@@ -1,0 +1,42 @@
+Atividade 1-01/12/2020
+
+create database db_rh
+
+use db_rh;
+
+create table tb_funcionarios(
+id bigint(5) auto_increment,
+nome varchar(100) not null,
+idade bigint,
+departamento varchar(20),
+ativo boolean,
+salario int,
+
+primary key(id)
+);
+
+select* from tb_funcionarios
+
+insert into tb_funcionarios(nome,idade, departamento, ativo,salario) values( "Joana Maria", 34, "Administrativo",true, 3500);
+insert into tb_funcionarios(nome,idade, departamento, ativo,salario) values( "Guilherme de oliveira", 30, "Administrativo",true, 3000);
+insert into tb_funcionarios(nome,idade, departamento, ativo,salario) values( "Alice Guilhermina", 26, "Administrativo",true, 2500);
+insert into tb_funcionarios(nome,idade, departamento, ativo,salario) values( "Pedro Athur", 19, "Administrativo",true, 1500);
+insert into tb_funcionarios(nome,idade, departamento, ativo,salario) values( "Maria Souza", 32, "Administrativo",true, 3500);
+ insert into tb_funcionarios(nome,idade, departamento, ativo,salario) values( "Gabriela de Jesus", 32, "Financeiro",true, 5500);
+ insert into tb_funcionarios(nome,idade, departamento, ativo,salario) values( "Gabriela de Jesus", 32, "Financeiro",true, 5500);
+ insert into tb_funcionarios(nome,idade, departamento, ativo,salario) values( "Gabriel Salles", 31, "Financeiro",true, 3500);
+ insert into tb_funcionarios(nome,idade, departamento, ativo,salario) values( "Gustavo Silva", 23, "Financeiro",true, 1500);
+ insert into tb_funcionarios(nome,idade, departamento, ativo,salario) values( "Julia De Andrade", 23, "Financeiro",true, 2000);
+insert into tb_funcionarios(nome,idade, departamento, ativo,salario) values( "Juliano De Andrade", 29, "Marketing",true, 3500);
+insert into tb_funcionarios(nome,idade, departamento, ativo,salario) values( "Benedita Salmão", 20, "Marketing",true, 4100);
+insert into tb_funcionarios(nome,idade, departamento, ativo,salario) values( "Giselle Augusta", 18, "Marketing",true, 1800);
+insert into tb_funcionarios(nome,idade, departamento, ativo,salario) values( "Jose de Almeida", 54, "Marketing",true, 5400);
+insert into tb_funcionarios(nome,idade, departamento, ativo,salario) values( "Julio Paz", 38, "Marketing",true, 3800);
+
+select* from tb_funcionarios where salario>=2000;
+select* from tb_funcionarios where salario<=2000
+
+Delete from tb_funcionarios where id=3
+
+
+select* from tb_funcionarios

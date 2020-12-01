@@ -1,0 +1,40 @@
+use db_ecommerce;
+create table tb_produtos(
+id bigint(5) auto_increment,
+nome varchar(100)not null,
+codigo bigint ,
+preço bigint,
+categoria varchar(20),
+marca varchar(20),
+
+primary key(id)
+);
+
+
+select* from tb_produtos
+
+insert into tb_produtos(nome, codigo,preço,categoria,marca) values ("TV",2021,2500,"Eletronico", "LG");
+insert into tb_produtos(nome, codigo,preço,categoria,marca) values ("TV",2022,3000,"Eletronico", "Samsung");
+insert into tb_produtos(nome, codigo,preço,categoria,marca) values ("TV",2023,1800,"Eletronico", "Philco");
+insert into tb_produtos(nome, codigo,preço,categoria,marca) values ("TV",2024,1500,"Eletronico", "Philips");
+insert into tb_produtos(nome, codigo,preço,categoria,marca) values ("Microondas",2044,500,"Eletrodomestico", "Philips");
+insert into tb_produtos(nome, codigo,preço,categoria,marca) values ("Microondas",2045,700,"Eletrodomestico", "LG");
+insert into tb_produtos(nome, codigo,preço,categoria,marca) values ("Microondas",2046,850,"Eletrodomestico", "Oster");
+insert into tb_produtos(nome, codigo,preço,categoria,marca) values ("Microondas",2047,450,"Eletrodomestico", "Philco");
+insert into tb_produtos(nome, codigo,preço,categoria,marca) values ("Cooktop",2061,722,"Eletrodomestico", "LG");
+insert into tb_produtos(nome, codigo,preço,categoria,marca) values ("Cooktop",2062,367,"Eletrodomestico", "Philco");
+insert into tb_produtos(nome, codigo,preço,categoria,marca) values ("Cooktop",2063,706,"Eletrodomestico", "Brastemp");
+insert into tb_produtos(nome, codigo,preço,categoria,marca) values ("Cooktop",2064,680,"Eletrodomestico", "Eletrolux");
+
+
+select* from tb_produtos
+
+select * from tb_produtos where preço >500;
+
+select * from tb_produtos where preço <500;
+
+select * from tb_produtos where preço between >700 and <900;
+
+select * from tb_produtos where preço between 700 and 900;
+
+Delete from tb_produtos where id = 2;
